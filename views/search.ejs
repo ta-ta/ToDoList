@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <%# header.ejsの読み込み%>
+  <%- include('header') -%>
+  <body>
+    <%# ToDo入力フォームを作成する%>
+    <form id='form' accept-charset="UTF-8">
+      <p>
+        <div id='inputPart'>
+          <label for='search'></label>
+          <input id='searchWord' type='text' name='search' placeholder='' size='30' maxlength='30'/>
+        </div>
+        <div id='submitPart'>
+        <input id='submitButton' type='submit' value='検索'/>
+      	</div>
+      </p>
+    </form>
+
+    <%# 応答メッセージを表示する%>
+    <div class='responseMessage' id='toDoMessage'></div>
+
+    <%# ToDo一覧を表示する%>
+    <list id='toDos'></list>
+    <br>
+
+    <%# 応答メッセージを表示する%>
+    <div class='responseMessage' id='toDoListMessage'></div>
+
+    <%# ToDo一覧を表示する%>
+    <list id='toDoLists'></list>
+
+
+    <%# jQueryとtodo.jsを読み込む%>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='javascripts/search.js'></script>
+    <script src='javascripts/common.js'></script>
+    <link rel='stylesheet' href='stylesheets/search.css'/>
+  </body>
+</html>

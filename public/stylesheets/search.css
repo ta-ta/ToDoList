@@ -1,0 +1,51 @@
+/* 入力部 */
+#form {
+  overflow: auto;
+  padding: 20px;
+}
+
+/* 左寄せ項目 */
+#inputPart {
+  float : left;
+  padding: 10px;
+}
+
+/* 右寄せ項目 */
+#submitPart {
+  float : right;
+  padding: 10px;
+}
+
+/* 検索ワード入力部 */
+#searchWord {
+  font-size: 24px;
+}
+
+/* 検索ボタン */
+#submitButton {
+  width:200px;
+  font-size:24px;
+  text-align:center;
+  color:#000000;
+  background-color:#49a9d4;
+}
+
+/* todoリスト/todo部 */
+.list {
+  overflow: auto;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+/* 左寄せ項目 */
+.namePart {
+  float : left;
+  padding: 10px;
+}
+
+/* 右寄せ項目 */
+.datePart {
+  float : right;
+  padding: 10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <%# header.ejsの読み込み%>
+  <%- include('header') -%>
+  <body>
+    <%# ToDo入力フォームを作成する%>
+    <%# ToDoリスト名を表示する%>
+    <p class='toDoList'></p>
+    <form id='form' accept-charset="UTF-8">
+      <p>
+        新しいToDoを作成する
+        <div id='inputPart'>
+          <label for='name'>ToDo名</label>
+          <% var maxlength = 30; %>
+          <input id='name' type='text' name='name' placeholder='' size='<%= maxlength %>' maxlength='<%= maxlength %>'/>
+          <br>
+          <br>
+          <label for='limitDate'>期限</label>
+          <input  type='text' id='calendar' name='limitDate' placeholder='' size='' maxlength=''/>
+        </div>
+        <div id='submitPart'>
+          <input id = 'submitButton' type='submit' value='ToDoの追加'/>
+        </div>
+      </p>
+    </form>
+
+    <%# 応答メッセージを表示する%>
+    <div class='responseMessage' id='toDoMessage'></div>
+
+    <%# ToDo一覧を表示する%>
+    <div class='lists'>
+    <list id='toDos'></list>
+    </div>
+
+    <%# jQueryとtodo.jsを読み込む%>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js'></script>
+
+    <script src='javascripts/todo.js'></script>
+    <script src='javascripts/common.js'></script>
+    <link rel='stylesheet' href='stylesheets/todo.css'/>
+  </body>
+</html>

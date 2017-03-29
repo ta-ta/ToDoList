@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 50px;
+  height: 70%;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #fff0f5;
+}
+
+/* ヘッダー */
+.header{
+  overflow: auto;
+  padding: 20px;
+  background: #add8e6;
+}
+
+#headerheadline {
+  float : left;
+  text-decoration: none;
+  color: #000000;
+}
+
+#headersearch {
+  float : right;
+  text-decoration: none;
+  color: #6b8e23;
+}
+
+/* リンク */
+a {
+  color: #9acd32;
+}

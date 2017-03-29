@@ -1,0 +1,77 @@
+/* 入力部 */
+#form {
+  overflow: auto;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 15px auto;
+}
+
+/* 左寄せ項目 */
+#inputPart {
+  float : left;
+  padding: 10px;
+}
+
+/* 右寄せ項目 */
+#submitPart {
+  float : right;
+  padding: 10px;
+}
+
+/* todo名入力部 */
+#name {
+  font-size: 24px;
+}
+
+/* 期限入力部 */
+#calendar {
+  font-size: 24px;
+}
+
+/* 追加ボタン */
+#submitButton {
+  width:200px;
+  height: 80px;
+  font-size:24px;
+  text-align:center;
+  color:#000000;
+  background-color:#49a9d4;
+}
+
+/* todo部 */
+.lists {
+  overflow: auto;
+  height:90%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+/* 各todo */
+.list {
+  overflow: auto;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+/* 左寄せ項目 */
+.nameDatePart {
+  float : left;
+  padding: 10px;
+}
+
+/* 右寄せ項目 */
+.buttonPart {
+  float : right;
+  padding: 10px;
+}
+
+/* 完了ボタン */
+.completeButton {
+  width:200px;
+  height: 80px;
+  font-size:24px;
+  text-align:center;
+  color:#000000;
+}

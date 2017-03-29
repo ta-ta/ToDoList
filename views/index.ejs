@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <%# header.ejsの読み込み%>
+  <%- include('header') -%>
+  <body>
+    <%# ToDo入力フォームを作成する%>
+    <form id='form' accept-charset="UTF-8">
+      <p>
+        新しいToDoを作成する
+        <div id='inputPart'>
+          <label for='name'></label>
+          <% var maxlength = 30; %>
+          <input id='name' type='text' name='name' placeholder='リスト名を入力してください' size='<%= maxlength %>' maxlength='<%= maxlength %>'/>
+        </div>
+        <div id='submitPart'>
+        <input id = 'submitButton' type='submit' value='リストの作成'/>
+        </div>
+      </p>
+    </form>
+
+    <%# 応答メッセージを表示する%>
+    <div class='responseMessage' id='toDoListMessage'></div>
+
+    <%# ToDo一覧を表示する%>
+    <div class='lists'>
+    <list id='toDoLists'></list>
+    </div>
+
+    <%# jQueryとtodo.jsを読み込む%>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src='javascripts/todolist.js'></script>
+    <script src='javascripts/common.js'></script>
+    <link rel='stylesheet' href='stylesheets/todolist.css'/>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+/* 入力部 */
+#form {
+  overflow: auto;
+  padding: 20px;
+}
+
+/* 左寄せ項目 */
+#inputPart {
+  float : left;
+  padding: 10px;
+}
+
+/* 右寄せ項目 */
+#submitPart {
+  float : right;
+  padding: 10px;
+}
+
+/* todoリスト名入力部 */
+#name {
+  font-size: 24px;
+}
+
+/* 追加ボタン */
+#submitButton {
+  width:200px;
+  font-size:24px;
+  text-align:center;
+  color:#000000;
+  background-color:#49a9d4;
+}
+
+/* todoリスト部 */
+.lists {
+  overflow: auto;
+  height:90%;
+}
+
+/* 各todoリスト */
+.list {
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid #000000;
+}
